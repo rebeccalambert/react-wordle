@@ -59,25 +59,52 @@ body {
 
 /* Game board */
 .game {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.game-info {
-  margin-left: 20px;
+.announcement {
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.active {
+
 }
 
 .square {
   background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+
+.correct {
+  background-color: green;
+}
+.wrong {
+  background-color: gray;
+}
+.almost {
+  background-color: yellow;
+}
+
+.game-info {
+  margin-top: 20px;
 }
