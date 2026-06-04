@@ -79,10 +79,6 @@ body {
   display: flex;
 }
 
-.active {
-
-}
-
 .square {
   background: #fff;
   border: 1px solid black;
